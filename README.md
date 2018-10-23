@@ -2,7 +2,7 @@
 
 ## Master's Degree Projects
 
-** Hello dear reader! **
+**Hello dear reader!**
 Welcome to my github repository!
 
 # Thanks for reading my repository, good bye!
