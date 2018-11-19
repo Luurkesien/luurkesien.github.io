@@ -21,15 +21,40 @@
     font-size: 35px;
     color: white;
 }
-nav {
-    float: left;
-    width: 30%;
-    background: #D5D8DC;
-    padding: 20px;
+    .navbar {
+    overflow: hidden;
+    background-color: #333;
+    position: sticky;
+    position: -webkit-sticky;
+    top: 0;
 }
-    nav ul {
-    list-style-type: none;
-    padding: 0;
+
+/* Style the navigation bar links */
+.navbar a {
+    float: left;
+    display: block;
+    color: white;
+    text-align: center;
+    padding: 14px 20px;
+    text-decoration: none;
+}
+
+
+/* Right-aligned link */
+.navbar a.right {
+    float: right;
+}
+
+/* Change color on hover */
+.navbar a:hover {
+    background-color: #ddd;
+    color: black;
+}
+
+/* Active/current link */
+.navbar a.active {
+    background-color: #666;
+    color: white;
 }
 
 article {
@@ -69,18 +94,12 @@ section:after {
   <header><h1> Mihai-Lazar Postariuc </h1></header>
   
   <section>
-    <nav>
-      <ul>
-  <p id="Image"> 
-   <img id="MyImage" src="/PICS/MySelf.jpg" style="width:100%;">
-  </p>
-        <p>
-          <iframe style="width:100%;"
-src="https://www.youtube.com/embed/9uq3QVIdn20?autoplay=1">
-</iframe>
-        </p>
-      </ul>
-    </nav>
+<div class="navbar">
+  <a href="#" class="active">Home</a>
+  <a href="#">Link</a>
+  <a href="#">Link</a>
+  <a href="#" class="right">Link</a>
+</div>
     
     
    
