@@ -16,22 +16,21 @@ function ChangeImage() {
 }
 }
 
+
 function HomeScreen()
 {
 	document.getElementById("MainScreen").innerHTML = "Sex1";
-	
-	
 }
+
 
 function BusinessScreen()
 {
 	document.getElementById("MainScreen").innerHTML = "Sex2";
-";
 	
 }
 
+
 function CasualScreen()
 {
-	document.getElementById("MainScreen").innerHTML = "Sex3";
-	
+	document.getElementById("MainScreen").innerHTML = "Sex3";	
 }
