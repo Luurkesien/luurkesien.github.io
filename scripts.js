@@ -18,39 +18,20 @@ function ChangeImage() {
 
 function HomeScreen()
 {
-	document.getElementById("MainScreen").innerHTML = "<h2>A lil bitty witty</h2>
-    <p> Heyo </p>
-    <p> I am the one, dont weight a ton ,etc. etc. </p>";
+	document.getElementById("MainScreen").innerHTML = "Sex1";
 	
 	
 }
 
 function BusinessScreen()
 {
-	document.getElementById("MainScreen").innerHTML = "<h2>business screeeen</h2>
-    <p>
-    <b>Links of interest:</b>
-  </p>
-  <p>
-    <a href="https://github.com/Luurkesien/luurkesien.github.io/tree/master/OpenScad">My OpenScad Projects</a>
-  </p>
-   <p>
-    <a href="https://github.com/Luurkesien/luurkesien.github.io/tree/master/Hardware">My Hardware Projects</a>
-  </p>
-   <p>
-    <a href="https://github.com/Luurkesien/luurkesien.github.io/tree/master/Software">My Software Projects</a>
-  </p>
-   <p>
-    <a href="https://github.com/Luurkesien/luurkesien.github.io/tree/master/Documents/MyCV.pdf">My CV</a>
-  </p>
+	document.getElementById("MainScreen").innerHTML = "Sex2";
 ";
 	
 }
 
 function CasualScreen()
 {
-	document.getElementById("MainScreen").innerHTML = "<h2>casual screeen</h2>
-    <p> Heyo </p>
-    <p> I am the one, dont weight a ton ,etc. etc. </p>";
+	document.getElementById("MainScreen").innerHTML = "Sex3";
 	
 }
