@@ -17,14 +17,7 @@ function ChangeImage() {
 }
 
 
-function AddDomain()
+function Statistix()
 {
-	if(other==0)
-	{
-	 document.getElementById("checky") = ( var x = document.createElement("INPUT"));
-	     x.setAttribute("type", "text");
-		document.body.appendChild(x);
-		other=1;
-	}
-	
+	 document.getElementById("Thnx") = "Thank you for submitting the info!";
 }
