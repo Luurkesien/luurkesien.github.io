@@ -1,5 +1,5 @@
 var CounterIMG = 0;
-
+var other=0;
 function ChangeImage() {
 	
 	if(CounterIMG == 0)
@@ -14,4 +14,16 @@ function ChangeImage() {
 	document.getElementById("ChangeButton").innerHTML = "Change to my casual self.";
 	CounterIMG = 0;
 }
+}
+
+
+function AddDomain()
+{
+	if(other==0)
+	{
+	 var x = document.createElement("INPUT");
+	     x.setAttribute("type", "text");
+		other=1;
+	}
+	
 }
