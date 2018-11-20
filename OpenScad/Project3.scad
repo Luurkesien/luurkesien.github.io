@@ -45,13 +45,11 @@ cylinder(h=outter_depth/2,r=height/2);
 module BECKY(cubs,distance_between,center,start)
 {
     translate([-center,start,-cubs])
-    cube([cubs,cubs*5,cubs*2],0);
+    cube([cubs,6000,cubs*2],0);
     
     translate([-center,start-distance_between,-cubs])
-    cube([cubs,cubs*5,cubs*2],0);
-    
-    
-    
+    cube([cubs,6000,cubs*2],0);
+        
 }
 
 
@@ -65,7 +63,12 @@ module movement(inner_circle,outter_circle,height,tooth_cub,number_of_teeth)
     rotate([0, 0, -$t * 180])
 gear(inner_circle=inner_circle,outter_circle=outter_circle,height=height,tooth_cub=tooth_cub,number_of_teeth=number_of_teeth);
     
-    translate([0,height*16,0])
+    translate([0,height*8,0])
+    rotate([0,90,0])
+    rotate([0, 0, -$t * X])
+gear(inner_circle=inner_circle,outter_circle=outter_circle,height=height,tooth_cub=tooth_cub,number_of_teeth=number_of_teeth);
+    
+    translate([0,height*16,])
     rotate([0,90,0])
     rotate([0, 0, -$t * X])
 gear(inner_circle=inner_circle,outter_circle=outter_circle,height=height,tooth_cub=tooth_cub,number_of_teeth=number_of_teeth);
@@ -91,7 +94,7 @@ translate([-$t*3600,0,0])
 
 BECKY(cubs=outter_circle*2,distance_between=height*15.6+height*42,center=outter_circle-height/2,start=height*30);
 
-    translate([0,-2000,outter_circle+height])
+    translate([0,-2000,outter_circle+height/2])
     translate([0,$t*3600,0])
     cube(1000);
 
@@ -99,4 +102,4 @@ BECKY(cubs=outter_circle*2,distance_between=height*15.6+height*42,center=outter_
 }
 
 
-movement(inner_circle=500,outter_circle=1000,height=600,tooth_cub=300,number_of_teeth=6);
+movement(inner_circle=800,outter_circle=1000,height=600,tooth_cub=300,number_of_teeth=6);
