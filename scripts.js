@@ -21,7 +21,7 @@ function AddDomain()
 {
 	if(other==0)
 	{
-	 var x = document.createElement("INPUT");
+	 document.getElementById("checky") = ( var x = document.createElement("INPUT"));
 	     x.setAttribute("type", "text");
 		document.body.appendChild(x);
 		other=1;
