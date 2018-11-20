@@ -23,6 +23,7 @@ function AddDomain()
 	{
 	 var x = document.createElement("INPUT");
 	     x.setAttribute("type", "text");
+		document.body.appendChild(x);
 		other=1;
 	}
 	
