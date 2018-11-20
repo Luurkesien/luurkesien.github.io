@@ -91,21 +91,10 @@ translate([-$t*3600,0,0])
 
 BECKY(cubs=outter_circle*2,distance_between=height*15.6+height*42,center=outter_circle-height/2,start=height*30);
 
-    translate([0,-2000,(outter_circle+outter_circle-inner_circle)/2])
+    translate([0,-2000,outter_circle+height])
     translate([0,$t*3600,0])
     cube(1000);
-    translate([0,0,(outter_circle+outter_circle-inner_circle)/2])
-    translate([0,$t*3600,0])
-    cube(1000);
-    translate([0,2000,(outter_circle+outter_circle-inner_circle)/2])
-    translate([0,$t*3600,0])
-    cube(1000);
-    translate([0,4000,(outter_circle+outter_circle-inner_circle)/2])
-    translate([0,$t*3600,0])
-    cube(1000);
-    translate([0,6000,(outter_circle+outter_circle-inner_circle)/2])
-    translate([0,$t*3600,0])
-    cube(1000);
+
 
 }
 
