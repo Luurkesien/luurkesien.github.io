@@ -1,20 +1,45 @@
-document.getElementById("id_logic_version").innerHTML="Logic Version = 2019.2.10";
+
+document.getElementById("id_logic_version").innerHTML="Logic Version = 2019.2.11";
 
 var svg = document.getElementById("id_svg");
-var cerc1= document.getElementById("id_cerc1");
-var cul = "blue";
-var sound = document.getElementById("audio");
+
+var BassD= document.getElementById("BASS");
+var SnarD= document.getElementById("SNAR");
+var ChitD= document.getElementById("CHIT");
+var OhitD= document.getElementById("OHIT");
+
+
+var bassd = document.getElementById("bassd");
+var snared = document.getElementById("snared");
+var ohitd = document.getElementById("ohihat");
+var chitd = document.getElementById("chihat");
+
+
           
 var svg_rect = svg.getBoundingClientRect();
 
-cerc1.addEventListener("touchstart", on_touch_color);
 
+BassD.addEventListener("touchstart", on_touch_BD);
+SnarD.addEventListener("touchstart", on_touch_SD);
+ChitD.addEventListener("touchstart", on_touch_OD);
+OhitD.addEventListener("touchstart", on_touch_CD);
 
-function on_touch_color()
+function on_touch_BD()
 {
-	//cerc1.setAttribute("fill",cul);
-		cerc1.setAttribute=("r","100");
-		sound.play();
-	
+		bassd.play();
 }
 
+function on_touch_SD()
+{
+		snared.play();
+}
+
+function on_touch_OD()
+{
+		ohitd.play();
+}
+
+function on_touch_CD()
+{
+		chitd.play();
+}
