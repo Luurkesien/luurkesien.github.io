@@ -1,5 +1,5 @@
 
-document.getElementById("id_logic_version").innerHTML="Logic Version = 2019.2.12";
+document.getElementById("id_logic_version").innerHTML="Logic Version = 2019.2.13";
 
 var svg = document.getElementById("id_svg");
 
@@ -26,24 +26,20 @@ OhitD.addEventListener("touchstart", on_touch_CD);
 
 function on_touch_BD()
 {
-	e.preventDefault();
 		bassd.play();
 }
 
 function on_touch_SD()
 {
-	e.preventDefault();
 		snared.play();
 }
 
 function on_touch_OD()
 {
-	e.preventDefault();
 		ohitd.play();
 }
 
 function on_touch_CD()
 {
-	e.preventDefault();
 		chitd.play();
 }
