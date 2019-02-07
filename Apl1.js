@@ -1,9 +1,8 @@
-document.getElementById("id_logic_version").innerHTML="Logic Version = 2019.2.9";
+document.getElementById("id_logic_version").innerHTML="Logic Version = 2019.2.10";
 
 var svg = document.getElementById("id_svg");
 var cerc1= document.getElementById("id_cerc1");
 var cul = "blue";
-<audio id="audio" src="http://www.soundjay.com/button/beep-07.wav" autoplay="false" ></audio>
 var sound = document.getElementById("audio");
           
 var svg_rect = svg.getBoundingClientRect();
