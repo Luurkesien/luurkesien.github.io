@@ -72,12 +72,12 @@ function EnDis_Edit()
 	if (endis == 1)
 	{
 		endis = 0;
-	document.getElementById("EditButton").innerHTML="Edit on!";	
+	document.getElementById("EditButton").innerHTML="Click to edit!";	
 	}
 	else
 	{
 		endis = 1;
-	document.getElementById("EditButton").innerHTML="Click to edit!";	
+	document.getElementById("EditButton").innerHTML="Edit enabled!";	
 	}
 }
 
