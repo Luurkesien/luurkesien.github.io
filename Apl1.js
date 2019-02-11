@@ -1,5 +1,5 @@
 
-document.getElementById("id_logic_version").innerHTML="Logic Version = 2019.2.13";
+document.getElementById("id_logic_version").innerHTML="Logic Version = 2019.2.14";
 
 var svg = document.getElementById("id_svg");
 
@@ -25,7 +25,8 @@ SnarD.addEventListener("touchstart", on_touch_SD);
 ChitD.addEventListener("touchstart", on_touch_OD);
 OhitD.addEventListener("touchstart", on_touch_CD);
 
-svg.addEventListener("touchmove", on_touch_move);
+svg.addEventListener("touchmove", on_touch_move_svg);
+BassD.addEventListener("touchmove", on_touch_move_bass);
 
 function on_touch_BD()
 {
@@ -55,10 +56,17 @@ function EnDis_Edit()
 		endis = 1;
 }
 
-function on_touch_move(e)
+function on_touch_move_svg(e)
 {
 	e.preventDefault();
-	cerc.setAttribute("cx", e.changedTouches[0].pageX);
-	cerc.setAttribute("cy", e.changedTouches[0].pageY - svg_rect.top);
+	svg.setAttribute("cx", e.changedTouches[0].pageX);
+	svg.setAttribute("cy", e.changedTouches[0].pageY - svg_rect.top);
+}
+
+function on_touch_move_bass(e)
+{
+	e.preventDefault();
+	BassD.setAttribute("x", e.changedTouches[0].pageX);
+	BassD.setAttribute("y", e.changedTouches[0].pageY - svg_rect.top);
 }
 
