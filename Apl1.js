@@ -1,5 +1,5 @@
 
-document.getElementById("id_logic_version").innerHTML="Logic Version = 2019.2.16";
+document.getElementById("id_logic_version").innerHTML="Logic Version = 2019.2.17";
 
 var svg = document.getElementById("id_svg");
 
@@ -30,6 +30,18 @@ BassD.addEventListener("touchmove", on_touch_move_bass);
 SnarD.addEventListener("touchmove", on_touch_move_snar);
 ChitD.addEventListener("touchmove", on_touch_move_chit);
 OhitD.addEventListener("touchmove", on_touch_move_ohit);
+
+var BassWidth = document.getElementById("BASS").getAttribute("width") / 2; 
+var BassHeight = document.getElementById("BASS").getAttribute("height") / 2; 
+
+var SnarWidth = document.getElementById("SNAR").getAttribute("width") / 2; 
+var SnarHeight = document.getElementById("SNAR").getAttribute("height") / 2; 
+
+var OhitWidth = document.getElementById("OHIT").getAttribute("width") / 2; 
+var OhitHeight = document.getElementById("OHIT").getAttribute("height") / 2; 
+
+var ChitWidth = document.getElementById("CHIT").getAttribute("width") / 2; 
+var ChitHeight = document.getElementById("CHIT").getAttribute("height") / 2; 
 
 function on_touch_BD()
 {
@@ -84,8 +96,8 @@ function on_touch_move_bass(e)
 	if (endis == 1)
 	{
 	e.preventDefault();
-	BassD.setAttribute("x", e.changedTouches[0].pageX-100);
-	BassD.setAttribute("y", e.changedTouches[0].pageY - svg_rect.top-100);
+	BassD.setAttribute("x", e.changedTouches[0].pageX - BassWidth);
+	BassD.setAttribute("y", e.changedTouches[0].pageY - svg_rect.top - BassHeight);
 	}
 }
 
@@ -94,8 +106,8 @@ function on_touch_move_snar(e)
 	if (endis == 1)
 	{
 	e.preventDefault();
-	SnarD.setAttribute("x", e.changedTouches[0].pageX);
-	SnarD.setAttribute("y", e.changedTouches[0].pageY - svg_rect.top);
+	SnarD.setAttribute("x", e.changedTouches[0].pageX - SnarWidth);
+	SnarD.setAttribute("y", e.changedTouches[0].pageY - svg_rect.top - SnarHeight);
 	}
 }
 function on_touch_move_chit(e)
@@ -103,8 +115,8 @@ function on_touch_move_chit(e)
 	if (endis == 1)
 	{
 	e.preventDefault();
-	ChitD.setAttribute("x", e.changedTouches[0].pageX);
-	ChitD.setAttribute("y", e.changedTouches[0].pageY - svg_rect.top);
+	ChitD.setAttribute("x", e.changedTouches[0].pageX - ChitWidth);
+	ChitD.setAttribute("y", e.changedTouches[0].pageY - svg_rect.top - ChitHeight);
 	}
 }
 function on_touch_move_ohit(e)
@@ -112,7 +124,7 @@ function on_touch_move_ohit(e)
 	if (endis == 1)
 	{
 	e.preventDefault();
-	OhitD.setAttribute("x", e.changedTouches[0].pageX);
-	OhitD.setAttribute("y", e.changedTouches[0].pageY - svg_rect.top);
+	OhitD.setAttribute("x", e.changedTouches[0].pageX - OhitWidth);
+	OhitD.setAttribute("y", e.changedTouches[0].pageY - svg_rect.top - OhitHeight);
 	}
 }
