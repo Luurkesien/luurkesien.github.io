@@ -29,7 +29,7 @@ svg.addEventListener("touchmove", on_touch_move_svg);
 BassD.addEventListener("touchmove", on_touch_move_bass);
 SnarD.addEventListener("touchmove", on_touch_move_snar);
 ChitD.addEventListener("touchmove", on_touch_move_chit);
-OhitD.addEventListener("touchmove", on_touch_move_ohit;
+OhitD.addEventListener("touchmove", on_touch_move_ohit);
 
 function on_touch_BD()
 {
