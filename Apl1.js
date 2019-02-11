@@ -1,5 +1,4 @@
-
-document.getElementById("id_logic_version").innerHTML="Logic Version = 2019.2.17";
+document.getElementById("id_logic_version").innerHTML="Logic Version = 2019.2.18";
 
 var svg = document.getElementById("id_svg");
 
@@ -83,12 +82,9 @@ function EnDis_Edit()
 
 function on_touch_move_svg(e)
 {
-	if (endis == 1)
-	{
 	e.preventDefault();
 	svg.setAttribute("cx", e.changedTouches[0].pageX);
 	svg.setAttribute("cy", e.changedTouches[0].pageY - svg_rect.top);
-	}
 }
 
 function on_touch_move_bass(e)
